@@ -40,7 +40,6 @@ import axios from "axios";
           params:{category: this.category}
         }),
       ])
-
       this.products = one.data 
       this.sub_categories = two.data
     },
@@ -53,6 +52,7 @@ import axios from "axios";
 
 //разделяем товары на группы по под_категориям 
     computed: {
+      //getter
       grouped() {
         const groups = {};
         this.products.forEach(product => {

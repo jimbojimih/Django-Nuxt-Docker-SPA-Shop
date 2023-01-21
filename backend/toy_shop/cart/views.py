@@ -45,22 +45,7 @@ class CartItemsViewSet(viewsets.ModelViewSet):
         if check:
             return Response(status=status.HTTP_200_OK, data='already added')
 
-        return super().create(request, *args, **kwargs)            
-    
-    @action(methods=['get'], detail=False, url_path='checkout')
-           # permission_classes=[IsAuthenticated])
-    def checkout(self, request):
-        user = request.user
-        checkout_details = {}
-        if request.user.is_anonymous:
-            cart_total_price = 0
-            cart_final_quantity = 0
-        else:
-            cart_total_price = user.items.aggregate(Sum('price'))['price__sum']
-            cart_final_quantity = user.items.count()
-        checkout_details['price'] = cart_total_price
-        checkout_details['quantity'] = cart_final_quantity
-        return Response(status=status.HTTP_200_OK, data=checkout_details)   
+        return super().create(request, *args, **kwargs)     
 
     def check_added_product(self, request, added_item_id):
         all_items_user = request.user.items.all()

@@ -1,4 +1,10 @@
 @font-face {
   font-family: 'Corner One';
-  src: url('~assets/fonts/CornerOne-Regular.ttf')
+  src: url('~assets/fonts/CornerOne-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Corner One';
+  src: local('Arial');
+  unicode-range: U+0040;
 }

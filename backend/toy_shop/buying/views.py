@@ -25,8 +25,8 @@ class Buying(views.APIView):
             product.save()
 
         text = self.create_text(user)
-        #self.send_telegram(text)
-        print(text)
+        self.send_telegram(text)
+        #print(text)
 
         logout(request)        
 

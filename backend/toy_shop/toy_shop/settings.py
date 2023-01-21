@@ -13,11 +13,14 @@ SECRET_KEY = 'django-insecure-z-8cjo2w+i9pqq9r^gr$p7w^%2-j-#52ty+$luzv5oh9-)^&dq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = environ.get('DEBUG', True)
 
-ALLOWED_HOSTS = ['backend', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = [
+    'backend', 'localhost', '139.28.222.160', 'bird-and-star.ru',
+]
+
 
 # Application definition
 
-INSTALLED_APPS = [      
+INSTALLED_APPS = [     
     'rest_framework',
     'corsheaders',
     'django.contrib.auth',    
@@ -46,9 +49,7 @@ MIDDLEWARE = [
 
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000',
-    'http://frontend:3000',
-    
+    'http://localhost:3000',    
 ]
 
 

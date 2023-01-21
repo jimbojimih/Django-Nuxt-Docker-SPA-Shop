@@ -5,7 +5,7 @@ style='text-align: right'
     <div>Оформление заказа.</div>
     <div v-if="list_items === 'empty'" >Корзина пуста, пожалуйста добавьте товары</div>
     <div v-else>
-      <div>Количество товаров: {{checkout.quantity}}, Общая сумма: {{checkout.price}} ₽.</div>
+      <div>Количество товаров: {{checkout['quantity']}}, Общая сумма: {{checkout['price']}} ₽.</div>
       <div class='check'> Проверьте выбранные товары:</div>
       <div v-for="(item, index) in list_items" :key='item.id'>  
 
@@ -28,34 +28,39 @@ style='text-align: right'
 </template>
 
 <script>
-import axios from "axios";
   export default {
     data() {
       return {
-        list_items: [],
-        checkout: '',        
+        list_items: [],  
       }
     },    
     async fetch() {
-      const [one, two] = await axios.all([
-      this.$axios.get(`cart/`),
-      this.$axios.get(`cart/checkout/`),
-      ]);
-
-      this.list_items = one.data; 
-      this.checkout = two.data;
+      this.list_items = await this.$axios.$get(`cart/`);
     },
     methods:{
       del (id, index){
-        axios.delete(`http://localhost:8000/api/cart/`+ id + `/`); 
+        this.$axios.delete(`cart/`+ id + `/`); 
         this.list_items.splice(index, 1);
         this.$store.commit('localStorage/remove_cart_total');
         if (this.list_items.length == 0)
           this.list_items = 'empty'
+      },
+    },
+    computed: {
+      //getter
+      checkout() {
+        let groups = {};
+        let quantity = 0
+        let price = 0
+        for (let item of this.list_items) {
+          price += Number(item.price)
+        }
+        groups['quantity']=this.list_items.length
+        groups['price'] = price        
+        return groups;
       }
-    }
-  }
-    
+    },
+}
 </script>
 
 <style scoped>

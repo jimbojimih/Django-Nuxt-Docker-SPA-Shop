@@ -1,5 +1,9 @@
 from rest_framework import viewsets
-from .serializers import CategorySerializer, SubCategorySerializer, ProductSerializer
+from .serializers import (
+	CategorySerializer, 
+	SubCategorySerializer, 
+	ProductSerializer, 
+)
 from .models import Category, SubCategory, Product
 
 

@@ -1,13 +1,13 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'shop',
+    title: 'Bird & star',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Shop' }
+      { hid: 'description', name: 'description', content: 'shop' }
     ],
-    link: [{ rel: 'icon', type: 'image/png', href: '/321.png'}
+    link: [{ rel: 'icon', type: 'image/png', href: '/in_browser.png'}
       ],
     script: [
       

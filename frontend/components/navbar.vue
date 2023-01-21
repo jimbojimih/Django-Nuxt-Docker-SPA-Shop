@@ -2,8 +2,8 @@
   <b-navbar :sticky=true class="my_nav" toggleable="md" type='light'>  
     <div class="container">
 
-      <b-navbar-nav class="pointer" @click="$emit('set_category', 'abouth')"> 
-        <img src="favicon.ico" width="140" height="30" alt="название магаза">
+      <b-navbar-nav class='shop_name'> 
+        Bird & Star
       </b-navbar-nav>
 
       <b-navbar-toggle class="toggle" target="nav-collapse" ></b-navbar-toggle>      
@@ -24,14 +24,13 @@
         <b-navbar-nav @click="$emit('set_category', 'checkout')" class='pointer ml-auto d-none d-md-block'>
           <cart /> 
         </b-navbar-nav>  
-
       </b-collapse>
+
     </div>
   </b-navbar>
 </template>
 
 <script>
-import axios from "axios";
   export default {      
     data() {
       return {
@@ -76,6 +75,20 @@ max-width:960px;
     cursor: pointer;
 } 
 
-</style> 
+.shop_name {
+  font-family: 'Corner One';
+  font-size: 20pt;
+  color: #CF5469;
+  font-weight:bold;
+  -webkit-mask-image: linear-gradient(
+      -75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 2s linear infinite;
+}
 
-font-size: 16px;
+@keyframes shine {
+  from { -webkit-mask-position: 150%; }
+  to { -webkit-mask-position: -50%; }
+}
+
+</style> 
