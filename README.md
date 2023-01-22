@@ -7,3 +7,5 @@ A small shop selling hand-made goods.
 ![](https://github.com/jimbojimih/5.-Django-Nuxt-Docker-SPA-Shop/blob/master/!screenshots%20for%20github/screen2.png)
 ![](https://github.com/jimbojimih/5.-Django-Nuxt-Docker-SPA-Shop/blob/master/!screenshots%20for%20github/screen3.png)
 ![](https://github.com/jimbojimih/5.-Django-Nuxt-Docker-SPA-Shop/blob/master/!screenshots%20for%20github/screen4.png)
+
+<img src="[https://your-image-url.type](https://github.com/jimbojimih/5.-Django-Nuxt-Docker-SPA-Shop/blob/master/!screenshots%20for%20github/screen1.png)" width="300">
