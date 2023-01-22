@@ -12,18 +12,18 @@ A small shop selling hand-made goods.
 docker-compose -f docker-dev.yml build
 docker-compose -f docker-dev.yml up
 ```
-http://localhost:3000/ - фронт
-http://localhost:8000/api - бекенд
-http://localhost:8000/admin - админка
+http://localhost:3000/ - фронт  
+http://localhost:8000/api - бекенд  
+http://localhost:8000/admin - админка  
 
 Для запуска в продакшн:
 ```
 docker-compose -f docker-prod.yml build
 docker-compose -f docker-prod.yml up
 ```
-http://localhost:80/ -фронт
-http://localhost:80/api -бекенд
-http://localhost:80/admin -админка
+http://localhost:80/ -фронт  
+http://localhost:80/api -бекенд  
+http://localhost:80/admin -админка  
 
 Не забудьте устновить свои SECRET_KEY для django и TOKEN_TELEGRAM для бота в переменные окружения ".env.dev" и ".env.prod"!
 
