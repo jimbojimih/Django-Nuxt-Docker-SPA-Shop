@@ -63,7 +63,7 @@ class Buying(views.APIView):
         
     def send_telegram(self, text):
            
-        token = '5795557189:AAEocnU9A_Gc_2qFbhLcX7YwUUol3VE8cnY'
+        token = environ.get('TOKEN_TELEGRAM')
         method = 'sendMessage'
         url = f'https://api.telegram.org/bot{token}/{method}'
 

@@ -8,7 +8,7 @@ es_formats.DATETIME_FORMAT = "d M Y H:i:s"
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-SECRET_KEY = 'django-insecure-z-8cjo2w+i9pqq9r^gr$p7w^%2-j-#52ty+$luzv5oh9-)^&dq'
+SECRET_KEY = environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = environ.get('DEBUG', True)
