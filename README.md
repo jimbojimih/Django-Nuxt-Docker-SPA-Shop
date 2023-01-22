@@ -35,7 +35,7 @@ __desktop screens:__
 ![](https://github.com/jimbojimih/5.-Django-Nuxt-Docker-SPA-Shop/blob/master/!screenshots%20for%20github/screen4.png)  
 __mobile screens:__  
 ![](https://github.com/jimbojimih/5.-Django-Nuxt-Docker-SPA-Shop/blob/master/!screenshots%20for%20github/screen5.png)
-![](https://github.com/jimbojimih/5.-Django-Nuxt-Docker-SPA-Shop/blob/master/!screenshots%20for%20github/screen6.png)  
+![](https://github.com/jimbojimih/5.-Django-Nuxt-Docker-SPA-Shop/blob/master/!screenshots%20for%20github/screen6.png)
 ![](https://github.com/jimbojimih/5.-Django-Nuxt-Docker-SPA-Shop/blob/master/!screenshots%20for%20github/screen7.png)  
 ![](https://github.com/jimbojimih/5.-Django-Nuxt-Docker-SPA-Shop/blob/master/!screenshots%20for%20github/screen8.png)  
 
