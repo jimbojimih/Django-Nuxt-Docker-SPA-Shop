@@ -1,5 +1,7 @@
 # 5.-Django-Nuxt-Docker-SPA-Shop
-A small shop selling hand-made goods.
+A small hand-made goods store in the form of a single-page application.
+*You can see the finished project at the link: [Bird & star](http://bird-and-star.ru/).*
+Stack used: Django REST framework, Nuxt, Nginx, Docker.
 
 Небольшой магазин хенд-мейд товаров в виде одностраничного приложения.  
 *Посмотреть готовый проект можно по ссылке: [Bird & star](http://bird-and-star.ru/).*
