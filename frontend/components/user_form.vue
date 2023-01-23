@@ -7,6 +7,7 @@
         :value=$store.state.localStorage.first_name 
         @input="set_form_value('first_name', 'input-1')"
         type="text" 
+        trim
         placeholder="Как к Вам обращаться." 
         required
       ></b-form-input>
@@ -18,6 +19,7 @@
         :value=$store.state.localStorage.number_phone 
         @input="set_form_value('number_phone', 'input-6')"
         type="tel" 
+        trim
         placeholder="Введите номер телефона" 
         required
       ></b-form-input>
@@ -29,6 +31,7 @@
         :value=$store.state.localStorage.email 
         @input="set_form_value('email', 'input-2')"
         type="email" 
+        trim
         placeholder="Введите почту" 
       ></b-form-input>
     </b-form-group>
@@ -39,6 +42,7 @@
         :value=$store.state.localStorage.city 
         @input="set_form_value('city', 'input-3')"
         type="text" 
+        trim
         placeholder="Введите город"
       ></b-form-input>
     </b-form-group>
@@ -49,6 +53,7 @@
         :value=$store.state.localStorage.street 
         @input="set_form_value('street', 'input-4')"
         type="text" 
+        trim
         placeholder="Введите улицу"
       ></b-form-input>
     </b-form-group>
@@ -59,6 +64,7 @@
         :value=$store.state.localStorage.house 
         @input="set_form_value('house', 'input-5')" 
         type="text" 
+        trim
         placeholder="Введите дом"
       ></b-form-input>
     </b-form-group>
@@ -69,6 +75,7 @@
         :value=$store.state.localStorage.comments 
         @input="set_form_value('comments', 'input-7')"
         type="text" 
+        trim
         placeholder="Комментарии"
       ></b-form-input>
     </b-form-group>
