@@ -28,6 +28,10 @@ http://localhost:80/ -фронт
 http://localhost:80/api -бекенд  
 http://localhost:80/admin -админка  
 
+**Для создания superuser, введите следующую команду в контейнере backend:
+```
+python manage.py createsuperuser --noinput
+```
 **Не забудьте устновить свои SECRET_KEY для django и TOKEN_TELEGRAM для бота в переменные окружения ".env.dev" и ".env.prod"!**  
 
 __desktop screens:__   
